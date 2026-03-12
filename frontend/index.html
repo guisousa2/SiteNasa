@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NASA APOD por Data de Nascimento</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Imagem da NASA na sua data de nascimento</h1>
+        <p class="subtitle">
+          Digite sua data de nascimento e veja o APOD (Astronomy Picture of the Day) da NASA.
+        </p>
+      </header>
+
+      <section class="card">
+        <form id="form" class="form">
+          <label class="label" for="birthdate">Data de nascimento</label>
+          <div class="row">
+            <input id="birthdate" name="birthdate" type="date" required />
+            <button id="btn" type="submit">Buscar</button>
+          </div>
+          <p class="hint">
+            O APOD existe a partir de <strong>1995-06-16</strong>.
+          </p>
+        </form>
+      </section>
+
+      <section id="result" class="result" aria-live="polite"></section>
+
+      <footer class="footer">
+        <span>Backend esperado em <code id="apiBaseLabel"></code></span>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+

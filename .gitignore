@@ -1,0 +1,22 @@
+# Ambientes Virtuais e Dependências
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Variáveis de Ambiente e Segredos
+.env
+.env.*
+*.secret
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS
+.DS_Store
